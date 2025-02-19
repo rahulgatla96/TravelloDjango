@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>This from templates </h1>
+<h2>printing dynamically name : {{name}}</h2>
+
+
+
+<form action="add" method="post">
+    {% csrf_token %}
+    Enter 1st number : <input type = "text" name = "num1"><br>
+    Enter 2st number : <input type = "text" name = "num2"><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
